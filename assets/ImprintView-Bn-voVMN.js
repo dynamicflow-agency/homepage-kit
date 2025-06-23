@@ -1,0 +1,1 @@
+import{_ as n,c as t,a as s,o}from"./index-CCAmn4bz.js";const a={name:"ImprintView"},r={class:"container py-5"};function c(p,e,i,m,_,l){return o(),t("div",r,e[0]||(e[0]=[s("h2",{class:"mb-4"},"Impressum",-1),s("p",null,"Angaben gemäß § 5 TMG...",-1)]))}const f=n(a,[["render",c]]);export{f as default};
