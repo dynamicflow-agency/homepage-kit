@@ -1,0 +1,1 @@
+import{_ as n,c as t,a as s,o as a}from"./index-BpsC7MWr.js";const c={name:"PrivacyPolicyView"},o={class:"container py-5"};function r(i,e,l,p,_,d){return a(),t("div",o,e[0]||(e[0]=[s("h2",{class:"mb-4"},"Datenschutzerklärung",-1),s("p",null,"Ihre Daten sind sicher bei uns...",-1)]))}const f=n(c,[["render",r]]);export{f as default};
