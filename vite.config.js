@@ -4,8 +4,8 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
-export default defineConfig({
-  base: import.meta.env.MODE === 'production' ? '/homepage-kit/' : '/',
+export default defineConfig(({ mode }) => ({
+  base: mode === 'production' ? '/homepage-kit/' : '/',
   plugins: [
     vue(),
     vueDevTools(),
@@ -15,4 +15,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-})
+}))
+
