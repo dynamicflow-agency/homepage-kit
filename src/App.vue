@@ -1,11 +1,13 @@
 <template>
-  <div class="min-h-screen flex flex-col">
+  <div class="flex flex-col min-h-screen">
     <AppHeader />
 
-    <main class="flex-grow container py-5">
+    <!-- Main wächst automatisch mit Inhalt -->
+    <main class="flex-grow px-4 py-8 w-full max-w-7xl mx-auto">
       <RouterView />
     </main>
 
+    <!-- Footer bleibt am unteren Rand bei leerem Inhalt -->
     <AppFooter />
   </div>
 </template>
@@ -17,7 +19,7 @@ import AppFooter from './components/Footer.vue'
 export default {
   components: {
     AppHeader,
-    AppFooter
+    AppFooter,
   }
 }
 </script>
