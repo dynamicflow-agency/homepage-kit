@@ -1,12 +1,20 @@
 <template>
-  <footer class="bg-dark text-white text-center py-3 mt-5">
-    <small>© 2025 MySite. Alle Rechte vorbehalten.</small>
+  <footer class="bg-light border-top text-center py-3">
+    <small>
+      © {{ currentYear }} dynamicflow –
+      <RouterLink to="/imprint" class="text-decoration-underline">Impressum</RouterLink> ·
+      <RouterLink to="/privacypolicy" class="text-decoration-underline">Datenschutz</RouterLink>
+    </small>
   </footer>
 </template>
 
 <script>
 export default {
-  name: 'AppFooter'
+  name: 'AppFooter',
+  data() {
+    return {
+      currentYear: new Date().getFullYear()
+    }
+  }
 }
 </script>
-

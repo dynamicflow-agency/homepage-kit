@@ -1,9 +1,11 @@
 <template>
-  <div>
+  <div class="min-h-screen flex flex-col">
     <AppHeader />
-    <main class="container py-5">
+
+    <main class="flex-grow container py-5">
       <RouterView />
     </main>
+
     <AppFooter />
   </div>
 </template>

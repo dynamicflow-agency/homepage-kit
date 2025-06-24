@@ -1,18 +1,25 @@
 <template>
-  <div class="container text-center py-5">
-    <h1 class="display-4 mb-4">Willkommen auf unserer Website</h1>
-    <p class="lead mb-4">
-      Diese Landingpage ist mit Vue.js und Bootstrap gebaut. Sie enthält ein Impressum und eine Datenschutzerklärung.
-    </p>
-    <div class="d-flex justify-content-center gap-3">
-      <RouterLink to="/imprint" class="btn btn-outline-secondary">Impressum</RouterLink>
-      <RouterLink to="/privacypolicy" class="btn btn-outline-secondary">Datenschutz</RouterLink>
-    </div>
+  <div>
+    <HeroSection />
+    <ServiceSection />
+    <AboutSection />
+    <ContactSection />
   </div>
 </template>
 
 <script>
+import HeroSection from '@/components/sections/HeroSection.vue'
+import ServiceSection from '@/components/sections/ServiceSection.vue'
+import AboutSection from '@/components/sections/AboutSection.vue'
+import ContactSection from '@/components/sections/ContactSection.vue'
+
 export default {
-  name: 'HomeView'
+  name: 'HomeView',
+  components: {
+    HeroSection,
+    ServiceSection,
+    AboutSection,
+    ContactSection
+  }
 }
 </script>
