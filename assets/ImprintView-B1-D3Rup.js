@@ -1,0 +1,1 @@
+import{_ as t,c as a,a as s,o}from"./index-P1A6NUt2.js";const n={name:"ImprintView"},r={class:"max-w-3xl mx-auto px-4 py-24"};function c(m,e,p,i,l,x){return o(),a("div",r,e[0]||(e[0]=[s("h2",{class:"text-2xl font-semibold mb-6"},"Impressum",-1),s("p",{class:"text-gray-700 leading-relaxed"}," Angaben gemäß § 5 TMG... ",-1)]))}const _=t(n,[["render",c]]);export{_ as default};
